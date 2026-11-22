@@ -1,0 +1,27 @@
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><title>Кофейня "Утренний Бриз"</title>
+<style>
+body{font-family:sans-serif;background:#f4eada;color:#2b1d12;margin:0;padding:20px}
+.hero{text-align:center;padding:40px 20px;background:linear-gradient(135deg,#8b5e3c,#c9a27a);color:#fff;border-radius:20px;margin-bottom:30px}
+.hero img{width:100%;max-width:600px;border-radius:15px;margin-top:20px}
+.about{max-width:800px;margin:0 auto 30px;text-align:center;font-size:18px;line-height:1.6}
+.cards{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;max-width:1000px;margin:0 auto}
+.card{background:#fff;border-radius:15px;padding:20px;width:280px;box-shadow:0 4px 15px rgba(0,0,0,.1);text-align:center}
+.card img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+.card b{color:#8b5e3c;font-size:22px}
+#petBtn{position:fixed;bottom:20px;right:20px;width:60px;height:60px;border-radius:50%;background:#8b5e3c;border:none;font-size:28px;cursor:pointer}
+</style></head><body>
+<div class="hero"><h1>Кофейня "Утренний Бриз" ☕</h1><p>Кофе, который будит вдохновение</p><img src="https://loremflickr.com/800/400/coffee"></div>
+<div class="about">🫘<b>О нас:</b> Уютная кофейня в центре с собственной обжаркой. Работаем с 2018 года, используем только арабику спешелти-класса. Есть зона для ноутбуков и детская комната. 🥐</div>
+<div class="cards">
+<div class="card"><img src="https://loremflickr.com/400/300/cappuccino"><h3>Капучино «Бриз»</h3><p>Нежная пена, двойной эспрессо, щепотка корицы — имба для утра, без базара! ☕</p><b>250 ₽</b></div>
+<div class="card"><img src="https://loremflickr.com/400/300/latte"><h3>Латте «Облако»</h3><p>Большое молоко, мягкий вкус — пушка для завтрака, летишь на работу! ☁️</p><b>280 ₽</b></div>
+<div class="card"><img src="https://loremflickr.com/400/300/coffee"><h3>Авторский Раф «Цитрус»</h3><p>Сливки, эспрессо, домашний лимонный сироп — топ, от которого просыпаешься! 🍋</p><b>320 ₽</b></div>
+</div>
+<footer style="text-align:center;margin-top:40px;padding:20px;color:#666">
+<h3>📞 Контакты</h3><p>📍 г. Москва, ул. Кофейная, д. 12, стр. 3 (вход со двора, арка с вывеской «Бриз»)</p>
+<p>🚶 Как добраться: от метро «Цветной бульвар» 5 минут прямо по Садовой-Самотечной, направо во двор между домами 10 и 14.</p>
+<p>📱 +7 (999) 123-45-67</p><p>✉️ hello@morningbreeze.ru</p>
+<p>🕒 Пн-Пт 07:00–22:00, Сб-Вс 09:00–23:00</p></footer>
+<button id="petBtn">☕</button>
+<script>const b=document.getElementById('petBtn');b.onmouseover=()=>{b.style.left=Math.random()*(innerWidth-70)+'px';b.style.top=Math.random()*(innerHeight-70)+'px'}</script>
+</body></html>
